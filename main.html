@@ -6,7 +6,9 @@
     <title>Table</title>
 
     <style>
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 8px;
@@ -17,27 +19,14 @@
         }
     </style>
 </head>
-
 <body>
 
 <table style="width:100%;">
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <th colspan="2">Nested Table 2</th>
-                </tr>
-                <tr>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
-                </tr>
-                <tr>
-                    <td>abc</td>
-                    <td>def</td>
-                </tr>
-            </table>
-        </td>
 
+    <!-- First Row -->
+    <tr>
+
+        <!-- Nested Table 1 -->
         <td>
             <table>
                 <tr>
@@ -54,9 +43,30 @@
                 </tr>
             </table>
         </td>
+
+        <!-- Nested Table 2 -->
+        <td>
+            <table>
+                <tr>
+                    <th colspan="2">Nested Table 2</th>
+                </tr>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>abc</td>
+                    <td>def</td>
+                </tr>
+            </table>
+        </td>
+
     </tr>
 
+    <!-- Second Row -->
     <tr>
+
+        <!-- Nested Table 3 -->
         <td>
             <table>
                 <tr>
@@ -69,6 +79,7 @@
             </table>
         </td>
 
+        <!-- Nested Table 4 -->
         <td>
             <table>
                 <tr>
@@ -81,7 +92,9 @@
                 </tr>
             </table>
         </td>
+
     </tr>
+
 </table>
 
 </body>
